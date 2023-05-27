@@ -142,4 +142,3 @@ char *error_exit_shell(data_shell *datash)
 
 	return (error);
 }
-
