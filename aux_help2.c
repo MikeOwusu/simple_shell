@@ -4,40 +4,37 @@
  * aux_help_env - Help information for the built-in env
  * Return: no return
  */
-void aux_help_env(void)
+void aux_help(void)
 {
-	char *help = "env: env [option] [name=value] [command [args]]\n\t";
+	char *help = "help: help [-dms] [pattern ...]\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Print the enviroment of the shell.\n";
+	help = "\tDisplay information about builtin commands.\n ";
 	write(STDOUT_FILENO, help, _strlen(help));
-
-}
-/**
- * aux_help_setenv - Help information for the built-in setenv
- * Return: no return
- */
-void aux_help_setenv(void)
-{
-
-	char *help = "setenv: setenv (const char *name, const char *value,";
-
-	write(STDOUT_FILENO, help, _strlen(help));
-	help = "int replace)\n\t";
-	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Add a new definition to the environment\n";
+	help = "Displays brief summaries of builtin commands.\n";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
 /**
- * aux_help_unsetenv - Help information for the built-in unsetenv
+ * aux_help_alias - Help information for the builtin alias.
  * Return: no return
  */
-void aux_help_unsetenv(void)
+void aux_help_alias(void)
 {
-	char *help = "unsetenv: unsetenv (const char *name)\n\t";
+	char *help = "alias: alias [-p] [name[=value]...]\n";
 
 	write(STDOUT_FILENO, help, _strlen(help));
-	help = "Remove an entry completely from the environment\n";
+	help = "\tDefine or display aliases.\n ";
 	write(STDOUT_FILENO, help, _strlen(help));
 }
+/**
+ * aux_help_cd - Help information for the builtin alias.
+ * Return: no return
+ */
+void aux_help_cd(void)
+{
+	char *help = "cd: cd [-L|[-P [-e]] [-@]] [dir]\n";
 
+	write(STDOUT_FILENO, help, _strlen(help));
+	help = "\tChange the shell working directory.\n ";
+	write(STDOUT_FILENO, help, _strlen(help));
+}
