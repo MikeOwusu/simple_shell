@@ -35,8 +35,13 @@ int _strlen(const char *s)
 
 /**
  * cmp_chars - compare chars of strings
+<<<<<<< HEAD
  * @str: input string
  * @delim: delimiter
+=======
+ * @str: input string.
+ * @delim: delimiter.
+>>>>>>> 4e681acc9731272b23fcc8a05d6e2d8174581cc5
  *
  * Return: 1 if are equals, 0 if not.
  */

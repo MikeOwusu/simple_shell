@@ -52,7 +52,13 @@ void cd_dot(data_shell *datash)
 }
 
 /**
+<<<<<<< HEAD
  * cd_to - changes to a directory given by the user
+=======
+ * cd_to - changes to a directory given
+ * by the user
+ *
+>>>>>>> 4e681acc9731272b23fcc8a05d6e2d8174581cc5
  * @datash: data relevant (directories)
  * Return: no return
  */
@@ -85,7 +91,11 @@ void cd_to(data_shell *datash)
 }
 
 /**
+<<<<<<< HEAD
  * cd_previous - changes to previous directory
+=======
+ * cd_previous - changes to the previous directory
+>>>>>>> 4e681acc9731272b23fcc8a05d6e2d8174581cc5
  *
  * @datash: data relevant (environ)
  * Return: no return
@@ -161,4 +171,7 @@ void cd_to_home(data_shell *datash)
 	free(p_pwd);
 	datash->status = 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4e681acc9731272b23fcc8a05d6e2d8174581cc5
